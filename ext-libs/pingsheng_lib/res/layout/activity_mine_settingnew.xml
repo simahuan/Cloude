@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/actionbar_base" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+    		android:layout_marginRight="5dip"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/switch_equipment"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_marginTop="5dip"
+                android:background="#FFFFFF"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tv_switchequipment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="16dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/set_share"
+                    android:textColor="@color/share_actionbar_color"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dip"
+                    android:src="@drawable/go_off" >
+                </ImageView>
+            </RelativeLayout>
+            <View 
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#d0d0d0"
+                />
+             <RelativeLayout
+                android:id="@+id/factory_reset"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:background="#FFFFFF"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tv_factoryreset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="16dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/set_share"
+                    android:textColor="@color/share_actionbar_color"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dip"
+                    android:src="@drawable/go_off" >
+                </ImageView>
+            </RelativeLayout>
+             <RelativeLayout
+                android:id="@+id/use_help"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:visibility="gone"
+                android:background="#FFFFFF"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tv_usehelp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="16dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/set_share"
+                    android:textColor="@color/share_actionbar_color"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dip"
+                    android:src="@drawable/go_off" >
+                </ImageView>
+            </RelativeLayout>
+            <View 
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#d0d0d0"
+                />
+            <RelativeLayout
+                android:id="@+id/feedback"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:background="#FFFFFF"
+                android:layout_marginTop="5dip"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tv_feedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="16dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/set_share"
+                    android:textColor="@color/share_actionbar_color"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dip"
+                    android:src="@drawable/go_off" >
+                </ImageView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/about"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_marginTop="5dip"
+                android:background="#FFFFFF"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tv_about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="16dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/set_share"
+                    android:textColor="@color/share_actionbar_color"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dip"
+                    android:src="@drawable/go_off" >
+                  </ImageView>
+                  
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

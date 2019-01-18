@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dip"
+    android:background="@color/actionbar_bg"
+    android:gravity="center_vertical"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/action_back_title_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/actionbar_left_margin"
+        android:background="@drawable/selector_item_click_bg"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/action_back_iv"
+            android:layout_width="8dp"
+            android:layout_height="12dp"
+            android:src="@drawable/actionbar_back_p"
+            android:visibility="visible" />
+ </LinearLayout>
+ <TextView 
+     android:id="@+id/search_text"
+      android:layout_width="wrap_content"
+     android:layout_height="fill_parent"
+     android:text="搜索"
+     android:layout_alignParentRight="true"
+     android:layout_marginRight="10dip"
+     android:textSize="18dip"
+     android:gravity="center_vertical"
+     android:textColor="@color/search_text_color"
+     />
+ <SearchView
+        android:id="@+id/action_search_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:layout_toRightOf="@id/action_back_title_ll"
+        android:layout_toLeftOf="@id/search_text"
+        android:imeOptions="actionSearch"
+        android:inputType="textCapWords"
+        android:layout_centerInParent="true"
+        android:queryHint="剧名、演员名称" />
+</RelativeLayout>

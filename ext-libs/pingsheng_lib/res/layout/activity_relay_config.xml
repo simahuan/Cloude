@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/actionbar_base" />
+
+	<FrameLayout
+   		 android:layout_width="match_parent"
+    	 android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/config_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relayconfig_head"
+                android:layout_width="match_parent"
+                android:layout_height="55dip"
+                android:layout_marginTop="5dip"
+                android:background="#FFFFFF"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/ssid_tv"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="Wefi_追剧神器"
+                    android:textColor="@color/blue_t"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ssid_tv"
+                    android:layout_marginLeft="16dip"
+                    android:text="已连接"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/lock_iv"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/wifi_has_pwd"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/equipment_list"
+                android:layout_width="fill_parent"
+                android:layout_height="34dip"
+                android:layout_marginTop="5dip"
+                android:background="#FFFFFF"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/wireless_relay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="33dip"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dip"
+                    android:text="@string/net_list"
+                    android:textColor="@color/share_manager"
+                    android:textSize="12dip" >
+                </TextView>
+
+                <View
+                    android:id="@+id/second_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#D4D4D4" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/relay_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="#D4D4D4"
+                android:dividerHeight="1dp"
+                android:scrollbarFadeDuration="0" >
+            </ListView>
+        </LinearLayout>
+	</ScrollView>
+	<LinearLayout
+            android:id="@+id/net_list_empty"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/download_empty" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dip"
+                android:text="网络列表获取失败，请重试"
+                android:textColor="#818181"
+                android:textSize="14dip" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/errorLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:visibility="visible" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="67dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header_top"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/pisen_title_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="追剧"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/middle"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/er"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/middle"
+        android:layout_centerInParent="true"
+        android:drawableTop="@drawable/setting_wifi_disconnect"
+        android:text="没有搜索到追剧设备哦~"
+        android:textColor="#999999"
+        android:textSize="@dimen/txt_16" />
+
+    <Button
+        android:id="@+id/pisen_btnShop"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/middle"
+        android:background="@drawable/equipment_confrim"
+        android:padding="5dp"
+        android:text="点击购买"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/txt_16" />
+
+    <Button
+        android:id="@+id/pisen_btnLook"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/pisen_btnShop"
+        android:background="@drawable/equipment_confrim"
+        android:padding="5dp"
+        android:text="在线观看"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/txt_16" />
+
+</RelativeLayout>

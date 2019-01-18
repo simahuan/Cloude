@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wefi.zhuiju.customview.SquareLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_btn_mine_item"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/icon_iv"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@drawable/mine_internet" />
+        
+        <ImageView
+            android:id="@+id/tip_iv"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_toRightOf="@id/icon_iv"
+            android:layout_marginLeft="-12dp"
+            android:layout_marginBottom="-12dp"
+            android:background="@drawable/fireware_tip" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="网络"
+        android:textColor="@color/actionbar_text_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="呵呵"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+</com.wefi.zhuiju.customview.SquareLinearLayout>

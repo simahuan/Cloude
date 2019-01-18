@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_textview_height" >
+
+        <TextView
+            android:id="@+id/tv_guest_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="name"
+            android:textColor="@color/sgray"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/mine_padding_left"
+            android:textSize="@dimen/wxb_fontsize_18" />
+        <TextView 
+            android:id="@+id/iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="6dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingRight="@dimen/mine_padding_left"
+            android:text="name"
+            android:textColor="@color/sgray"
+            android:textSize="@dimen/wxb_fontsize_16"
+            />
+    </RelativeLayout>
+	<TextView 
+	    android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            />
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/actionbar_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/s_title" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="16dip"
+        android:gravity="bottom"
+        android:text="@string/modify_ip_adress" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/first_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLength="3" />
+
+        <EditText
+            android:id="@+id/second_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLength="3" />
+
+        <EditText
+            android:id="@+id/third_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLength="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="false"
+            android:text="1" />
+    </LinearLayout>
+
+</LinearLayout>

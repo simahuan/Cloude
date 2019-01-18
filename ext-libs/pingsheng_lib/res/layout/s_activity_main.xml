@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/share_title"
+        layout="@layout/actionbar_base" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/share_title" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/switch_netvisitor"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_margin="5dip"
+                android:layout_marginTop="5dip"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dip"
+                    android:gravity="center"
+                    android:text="@string/net_visitor"
+                    android:textColor="@color/share_actionbar_color"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/netvisitor_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dip" >
+                </ImageView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/netset"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="#FFFFFF"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/netset_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="16dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/name_set"
+                    android:textColor="@color/share_actionbar_color"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/go_netset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dip"
+                    android:src="@drawable/go_off" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/txt_netset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/go_netset"
+                    android:textColor="@color/set_sharenet_color" 
+                    android:layout_marginRight="4dip"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/share_manager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                android:background="#FFFFFF"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="33dip"
+                    android:layout_marginLeft="16dip"
+                    android:gravity="left|center"
+                    android:text="@string/visitor_list"
+                    android:textColor="@color/share_manager"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#D4D4D4" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/share_net_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip" >
+
+                <ListView
+                    android:id="@+id/visitor_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF" >
+                </ListView>
+
+                <TextView
+                    android:id="@+id/listview_empty"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:layout_gravity="center"
+                   android:gravity="center"
+                    android:text="暂时没有管理的网络"
+                    android:background="#FFFFFF"
+                    android:textColor="#A9A9A9"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/blackname_list"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_margin="5dip"
+                android:layout_marginTop="5dip"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dip"
+                    android:text="@string/blackname_list"
+                    android:textColor="@color/share_actionbar_color"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/go_blackname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dip"
+                    android:src="@drawable/go_off" />
+
+                <TextView
+                    android:id="@+id/blackname_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/go_blackname"
+                    android:textColor="@color/blackname_number" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

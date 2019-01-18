@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/detection_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:visibility="visible" >
+
+    <RelativeLayout
+        android:id="@+id/detection_image_rl"
+        android:layout_width="@dimen/detection_tip_image_width"
+        android:layout_height="@dimen/detection_tip_image_width"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/detection_detecting" >
+
+        <com.wefi.zhuiju.customview.RoundProgressBar
+            android:id="@+id/percent_rpb"
+            android:layout_width="152dp"
+            android:layout_height="152dp"
+            android:layout_centerInParent="true"
+            custom:roundColor="#F7F7F7"
+            custom:roundProgressColor="@color/detection_state_exception"
+            custom:roundWidth="2dip"
+            custom:textIsDisplayable="false" />
+
+        <TextView
+            android:id="@+id/percent_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="0"
+            android:textColor="@color/detection_state_exception"
+            android:textSize="@dimen/detection_progress_text_textsize"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/percent_sign_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/percent_tv"
+            android:layout_toRightOf="@id/percent_tv"
+            android:text="%"
+            android:textColor="@color/detection_state_exception"
+            android:textSize="18sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/detection_state_text_tv"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:gravity="center"
+        android:text="@string/detection_state_detectioning"
+        android:textColor="@color/detection_state_exception"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/detection_infos_rl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/detection_image_rl"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/detection_scroll_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible" >
+
+            <TextView
+                android:layout_width="220dp"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:background="#BCBCBC" />
+
+            <ImageView
+                android:id="@+id/detection_ball_iv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/detection_icon_detection" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/detection_step_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:text="正在检测当前Wifi网络质量" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/detection_result_tv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="invisible"
+        android:layout_below="@id/detection_image_rl"
+        android:gravity="center"
+        android:text="IP号码冲突\n服务器连接异常\nWifi质量较差"
+        android:textSize="@dimen/detection_infos_text_textsize" />
+
+    <TextView
+        android:id="@+id/opt_btn_tv"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/detection_infos_rl"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/selector_detection_state_exception"
+        android:gravity="center"
+        android:text="取  消"
+        android:textColor="@color/white"
+        android:textSize="@dimen/detection_opt_text_textsize" />
+
+</RelativeLayout>

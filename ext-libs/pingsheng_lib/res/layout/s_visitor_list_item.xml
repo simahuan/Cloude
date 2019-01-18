@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dip"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dip" >
+
+        <TextView
+            android:id="@+id/visitor_list_names"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dip"
+            android:text="iphone6"
+            android:ellipsize="end"
+            android:textColor="@color/share_actionbar_color"
+            android:textSize="16dip" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+           
+            android:layout_marginRight="16dip" >
+
+            <TextView
+                android:id="@+id/text_pending_access"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pending_access"
+                android:textSize="14dip" />
+
+            <ImageView
+                android:id="@+id/image_add_blackname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:background="@drawable/s_add_blackname" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/actionbar_base" />
+
+ <ImageView
+     android:id="@+id/round_img"
+        android:layout_width="@dimen/mine_storage_round_background_width"
+        android:layout_height="@dimen/mine_storage_round_background_width"
+        android:layout_centerInParent="true"
+        android:src="@drawable/round" />
+
+    <com.wefi.zhuiju.customview.RoundProgressBar
+        android:id="@+id/round"
+        android:layout_width="@dimen/mine_storage_round_width"
+        android:layout_height="@dimen/mine_storage_round_width"
+        android:layout_centerInParent="true"
+        custom:roundColor="#00000000"
+        custom:roundWidth="2dip"
+        custom:textIsDisplayable="false" />
+    <!--         custom:roundProgressColor="@color/orange_st"
+     -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <TextView
+            android:id="@+id/used_flow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:visibility="invisible"
+            android:textSize="38sp" />
+
+        <TextView
+            android:id="@+id/used_flow_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/used_flow"
+            android:layout_toRightOf="@id/used_flow"
+            android:text="%"
+            android:visibility="gone"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/used"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/used_flow_sign"
+            android:layout_alignTop="@id/used_flow"
+            android:paddingTop="8dp"
+            android:text="剩余"
+            android:visibility="gone"
+            android:textSize="14sp" />
+    </RelativeLayout>
+ <TextView
+        android:id="@+id/tv_remain_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/round_img"
+      	android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_marginTop="20dip"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/mine_storage_top"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:text="*您可以从爱追剧界面中手动删除已看剧集，或点击右上角按钮直接情况所有数据。"
+        android:textColor="@color/gray"
+        android:textSize="14sp" />
+
+</RelativeLayout>

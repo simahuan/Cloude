@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/actionbar_base" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/switch_netvisitor"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_margin="5dip"
+                android:layout_marginTop="10dip"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:id="@+id/dlan_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dip"
+                    android:gravity="center"
+                    android:text="@string/lab_home_share"
+                    android:textColor="@color/share_actionbar_color"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/dlan_switch_sw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/s_button_off"
+                    android:layout_marginRight="16dip" />
+                                    
+                <TextView
+                    android:id="@+id/dlan_tip_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/dlan_title_tv"
+                    android:layout_toLeftOf="@id/dlan_switch_sw"
+                    android:layout_marginRight="10dp"/>
+              
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

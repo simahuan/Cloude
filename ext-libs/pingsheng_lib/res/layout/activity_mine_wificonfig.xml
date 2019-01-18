@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/actionbar_base" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+	<LinearLayout
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/mine_storage_left"
+        android:layout_marginRight="@dimen/mine_storage_left">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/ssid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mine_margintop"
+            android:text="无线名称"
+            android:textSize="@dimen/wxb_fontsize_18" />
+
+        <EditText
+            android:id="@+id/et_ssid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/ssid"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/ssid"
+            android:gravity="top|left"
+            android:maxLength="16"
+            android:ems="10"
+            android:hint="@string/hint_wifinameinput"
+            android:textColorHint="#aeaeae"
+            android:singleLine="true"
+            android:textSize="@dimen/wxb_fontsize_16" />
+
+        <TextView
+            android:id="@+id/tv_ssid_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/et_ssid"
+            android:layout_below="@id/ssid"
+            android:layout_marginTop="10dp"
+            android:text="与设备名称相同，点击进行修改。"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/wxb_fontsize_16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mine_margintop"
+            android:text="无线密码"
+            android:textSize="@dimen/wxb_fontsize_18" />
+
+            <com.wefi.zhuiju.customview.EditTextPwd 
+                android:id="@+id/et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/pwd"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/pwd"
+            android:gravity="top|left"
+            android:maxLength="16"
+            android:singleLine="true"
+            android:drawablePadding="3dp"
+            android:textSize="@dimen/wxb_fontsize_16"
+            android:digits="@string/register_password_digits"
+            android:ems="10"
+            android:hint="@string/hint_wifipasswordinput"
+            android:textColorHint="#aeaeae"
+                />
+
+        <TextView
+            android:id="@+id/tv_pwd_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/et_pwd"
+            android:layout_below="@id/pwd"
+            android:layout_marginTop="10dp"
+            android:text="与管理密码相同，点击进行修改。"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/wxb_fontsize_16" />
+    </RelativeLayout>
+    <TextView
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mine_margintop"
+        android:text="加密方式"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/wxb_fontsize_18" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:id="@+id/rl_strong_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_textview_height" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="强加密 WPA2"
+            android:textSize="@dimen/wxb_fontsize_18" />
+
+        <ImageView
+            android:id="@+id/iv_strong_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/nochecked" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:id="@+id/rl_mix_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_textview_height" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="混合模式 WPA/WPA2 "
+            android:textSize="@dimen/wxb_fontsize_18" />
+
+        <ImageView
+            android:id="@+id/iv_mix_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/nochecked" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_textview_confirm_height"
+        android:layout_marginTop="@dimen/mine_setsharing_top"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:text="确     定"
+        android:textSize="@dimen/wxb_fontsize_18"
+        android:textColor="#ffffff" />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

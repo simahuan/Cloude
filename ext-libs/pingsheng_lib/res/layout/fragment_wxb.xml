@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/actionbar_base" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/mine_item_bg_n" >
+
+        <GridView
+            android:id="@+id/item_gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mine_item_divide"
+            android:gravity="center"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:horizontalSpacing="1dp"
+            android:verticalSpacing="1dp" >
+        </GridView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/mine_item_divide" />
+    </LinearLayout>
+    
+  <include  
+      layout="@layout/list_footer"/>
+
+</LinearLayout>

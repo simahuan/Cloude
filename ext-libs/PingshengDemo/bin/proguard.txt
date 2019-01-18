@@ -1,0 +1,270 @@
+# view res/layout/activity_main.xml #generated:2
+# view res/layout/activity_main_tabhost.xml #generated:2
+-keep class android.support.v4.app.FragmentTabHost { <init>(...); }
+
+# view res/layout/activity_guide.xml #generated:7
+# view res/layout/activity_video_playinfos.xml #generated:32
+# view res/layout/activity_video_plays_classify.xml #generated:19
+# view res/layout/fragment_apps.xml #generated:81
+# view res/layout/jinxuan.xml #generated:18
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:367
+-keep class android.test.InstrumentationTestRunner { <init>(...); }
+
+# view AndroidManifest.xml #generated:349
+-keep class com.umeng.fb.ConversationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:356
+-keep class com.umeng.update.UpdateDialogActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:352
+-keep class com.umeng.update.net.DownloadingService { <init>(...); }
+
+# view res/layout/activity_video_playinfos.xml #generated:27
+# view res/layout/activity_video_plays_classify.xml #generated:12
+-keep class com.viewpagerindicator.TabPageIndicator { <init>(...); }
+
+# view res/layout/jinxuan.xml #generated:24
+-keep class com.viewpagerindicator.UnderlinePageIndicator { <init>(...); }
+
+# view AndroidManifest.xml #generated:70
+-keep class com.wefi.zhuiju.activity.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:83
+-keep class com.wefi.zhuiju.activity.MoreActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:273
+-keep class com.wefi.zhuiju.activity.apps.APKDownLoadListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:111
+-keep class com.wefi.zhuiju.activity.apps.BaiDuAppSerchActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:163
+-keep class com.wefi.zhuiju.activity.discovery.whetherPush { <init>(...); }
+
+# view AndroidManifest.xml #generated:179
+-keep class com.wefi.zhuiju.activity.follow.download.DownloadActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:174
+-keep class com.wefi.zhuiju.activity.follow.download.DownloadManagerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:150
+-keep class com.wefi.zhuiju.activity.follow.online.PlaysClassifyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:157
+-keep class com.wefi.zhuiju.activity.follow.playinfos.PlayInfosActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:167
+-keep class com.wefi.zhuiju.activity.follow.searchnew.SearchActivity_new { <init>(...); }
+
+# view AndroidManifest.xml #generated:282
+-keep class com.wefi.zhuiju.activity.global.HostLoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:276
+-keep class com.wefi.zhuiju.activity.global.InterceptActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:218
+-keep class com.wefi.zhuiju.activity.global.webview.WebViewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:92
+-keep class com.wefi.zhuiju.activity.initialize.DeviceInitActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:66
+-keep class com.wefi.zhuiju.activity.initialize.GuestApproveActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:63
+-keep class com.wefi.zhuiju.activity.initialize.GuideActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:104
+-keep class com.wefi.zhuiju.activity.initialize.LoginInitActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:99
+-keep class com.wefi.zhuiju.activity.initialize.MainInitActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:57
+-keep class com.wefi.zhuiju.activity.initialize.WelcomeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:89
+-keep class com.wefi.zhuiju.activity.initialize.WifiListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:108
+-keep class com.wefi.zhuiju.activity.initialize.WifiSettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:230
+-keep class com.wefi.zhuiju.activity.mine.FourthGNetworkActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:185
+-keep class com.wefi.zhuiju.activity.mine.MoreActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:208
+-keep class com.wefi.zhuiju.activity.mine.SettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:211
+-keep class com.wefi.zhuiju.activity.mine.SettingActivityNew { <init>(...); }
+
+# view AndroidManifest.xml #generated:233
+-keep class com.wefi.zhuiju.activity.mine.ShutdownActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:222
+-keep class com.wefi.zhuiju.activity.mine.StorageActivityNew { <init>(...); }
+
+# view AndroidManifest.xml #generated:189
+-keep class com.wefi.zhuiju.activity.mine.UserActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:251
+-keep class com.wefi.zhuiju.activity.mine.detection.InternetDetectionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:247
+-keep class com.wefi.zhuiju.activity.mine.internet.InternetStateActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:258
+-keep class com.wefi.zhuiju.activity.mine.internet.LineConfigActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:255
+-keep class com.wefi.zhuiju.activity.mine.internet.RelayConfigActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:236
+-keep class com.wefi.zhuiju.activity.mine.lab.LabActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:242
+-keep class com.wefi.zhuiju.activity.mine.problems.ProblemDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:239
+-keep class com.wefi.zhuiju.activity.mine.problems.ProblemsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:215
+-keep class com.wefi.zhuiju.activity.mine.setting.AboutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:226
+-keep class com.wefi.zhuiju.activity.mine.setting.FeedBackActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:199
+-keep class com.wefi.zhuiju.activity.mine.share2.BlackListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:193
+-keep class com.wefi.zhuiju.activity.mine.share2.Share2Activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:196
+-keep class com.wefi.zhuiju.activity.mine.share2.ShareSettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:263
+-keep class com.wefi.zhuiju.activity.mine.upgrade.FirmwareUpgradeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:266
+-keep class com.wefi.zhuiju.activity.mine.upgrade.UpgradeProgressActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:204
+-keep class com.wefi.zhuiju.activity.mine.wifi.WifiConfigActivityNew { <init>(...); }
+
+# view AndroidManifest.xml #generated:122
+-keep class com.wefi.zhuiju.activity.player.Player1Activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:130
+-keep class com.wefi.zhuiju.activity.player2.Player2Activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:138
+-keep class com.wefi.zhuiju.activity.player2.PlayerService { <init>(...); }
+
+# view res/layout/v2_activity_video.xml #generated:9
+-keep class com.wefi.zhuiju.activity.player2.VideoView { <init>(...); }
+
+# view AndroidManifest.xml #generated:116
+-keep class com.wefi.zhuiju.activity.vitamio.PlayerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:323
+-keep class com.wefi.zhuiju.broadcast.AppInstallReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:306
+-keep class com.wefi.zhuiju.broadcast.StartServiceBroadcastReceiver { <init>(...); }
+
+# view res/layout/fragment_mine.xml #generated:10
+-keep class com.wefi.zhuiju.customview.DraggableGridView { <init>(...); }
+
+# view res/layout/activity_line_config.xml #generated:136
+# view res/layout/activity_mine_wificonfig.xml #generated:71
+-keep class com.wefi.zhuiju.customview.EditTextPwd { <init>(...); }
+
+# view res/layout/activity_mine_more.xml #generated:13
+-keep class com.wefi.zhuiju.customview.NoScrollGridView { <init>(...); }
+
+# view res/layout/activity_mine_storage.xml #generated:20
+# view res/layout/activity_upgrade_progress.xml #generated:20
+# view res/layout/activity_upgrade_progress.xml #generated:74
+# view res/layout/include_detection_detectioning.xml #generated:17
+# view res/layout/item_download_video.xml #generated:52
+-keep class com.wefi.zhuiju.customview.RoundProgressBar { <init>(...); }
+
+# view res/layout/item_mine_item_new.xml #generated:2
+# view res/layout/item_mine_more.xml #generated:8
+# view res/layout/item_problem.xml #generated:2
+-keep class com.wefi.zhuiju.customview.SquareLinearLayout { <init>(...); }
+
+# view res/layout/item_download_video.xml #generated:12
+# view res/layout/item_online_play.xml #generated:12
+-keep class com.wefi.zhuiju.customview.cropimageview.CropImageView { <init>(...); }
+
+# view res/layout/activity_video_playinfos.xml #generated:11
+# view res/layout/item_local_video.xml #generated:16
+# view res/layout/item_subscribe_plays.xml #generated:6
+-keep class com.wefi.zhuiju.customview.cropimageview.ImageViewTopCrop { <init>(...); }
+
+# view res/layout/item_hot_app.xml #generated:131
+# view res/layout/item_update_app.xml #generated:123
+-keep class com.wefi.zhuiju.customview.processbutton.impl.SubmitProcessButton { <init>(...); }
+
+# view res/layout/activity_video_downloads.xml #generated:15
+# view res/layout/discovery_listview.xml #generated:7
+# view res/layout/fragment_local_videos.xml #generated:8
+# view res/layout/fragment_video_follow.xml #generated:11
+-keep class com.wefi.zhuiju.customview.pulltorefreshlistview.PullToRefreshListView { <init>(...); }
+
+# view res/layout/fragment_video_online_page.xml #generated:35
+-keep class com.wefi.zhuiju.customview.refreshlistview.PullToRefreshListView { <init>(...); }
+
+# view res/layout/whether_push_view.xml #generated:76
+-keep class com.wefi.zhuiju.customview.slipbuttonview.SlipButton { <init>(...); }
+
+# view AndroidManifest.xml #generated:289
+-keep class com.wefi.zhuiju.dlna.BrowserActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:304
+-keep class com.wefi.zhuiju.dlna.BrowserUpnpService { <init>(...); }
+
+# view AndroidManifest.xml #generated:297
+-keep class com.wefi.zhuiju.service.DownloadService { <init>(...); }
+
+# view AndroidManifest.xml #generated:302
+-keep class com.wefi.zhuiju.service.WifiP2PService { <init>(...); }
+
+# view AndroidManifest.xml #generated:296
+-keep class com.wefi.zhuiju.service.httpServer.WebService { <init>(...); }
+
+# view AndroidManifest.xml #generated:77
+-keep class com.wefi.zhuiju.smartconfig.MulticastDemoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:46
+-keep class com.zsw.pingshengdemo.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:38
+-keep class com.zsw.pingshengdemo.MyApp { <init>(...); }
+
+# view AndroidManifest.xml #generated:142
+-keep class io.vov.vitamio.activity.InitActivity { <init>(...); }
+
+# view res/layout/activity_video_player.xml #generated:7
+# view res/layout/v2_activity_video.xml #generated:2
+-keep class io.vov.vitamio.widget.CenterLayout { <init>(...); }
+
+# view res/layout/v2_activity_video.xml #generated:54
+-keep class io.vov.vitamio.widget.OutlineTextView { <init>(...); }
+
+# view res/layout/activity_video_player.xml #generated:12
+-keep class io.vov.vitamio.widget.VideoView { <init>(...); }
+
+# view AndroidManifest.xml #generated:303
+-keep class org.fourthline.cling.android.AndroidUpnpServiceImpl { <init>(...); }
+
+# onClick res/layout/s_setwifi.xml #generated:45
+-keepclassmembers class * { *** false(...); }
+

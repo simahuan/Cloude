@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/application_background"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingLeft="80dp"
+    android:paddingRight="80dp"
+    android:paddingTop="20dp" >
+
+    <RelativeLayout
+        android:id="@+id/down_center_rl"
+        android:layout_width="@dimen/mine_storage_round_background_width"
+        android:layout_height="@dimen/mine_storage_round_background_width"
+        android:background="@drawable/round"
+        android:visibility="visible">
+
+        <com.wefi.zhuiju.customview.RoundProgressBar
+            android:id="@+id/down_progress_rpb"
+            android:layout_width="@dimen/mine_storage_round_width"
+            android:layout_height="@dimen/mine_storage_round_width"
+            android:layout_centerInParent="true"
+            custom:roundColor="#00000000"
+            custom:roundProgressColor="@color/orange_st"
+            custom:roundWidth="2dip"
+            custom:textIsDisplayable="false" />
+
+        <TextView
+            android:id="@+id/down_progress_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="0"
+            android:textColor="@color/orange_st"
+            android:textSize="38sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/down_percent_sign_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/down_progress_tv"
+            android:layout_toRightOf="@id/down_progress_tv"
+            android:text="%"
+            android:textColor="@color/orange_st"
+            android:textSize="18sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/down_des_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="下载中..."
+        android:singleLine="true"  
+        android:ellipsize="end"  
+        android:focusable="true"  
+        android:focusableInTouchMode="true"  
+        android:textColor="@color/orange_st"
+        android:visibility="visible"
+        android:textSize="22sp" />
+
+    <RelativeLayout
+        android:id="@+id/upgrade_center_rl"
+        android:layout_width="@dimen/mine_storage_round_background_width"
+        android:layout_height="@dimen/mine_storage_round_background_width"
+        android:background="@drawable/round"
+        android:visibility="gone" >
+
+        <com.wefi.zhuiju.customview.RoundProgressBar
+            android:id="@+id/upgrade_progress_rpb"
+            android:layout_width="@dimen/mine_storage_round_width"
+            android:layout_height="@dimen/mine_storage_round_width"
+            android:layout_centerInParent="true"
+            custom:roundColor="#00000000"
+            custom:roundProgressColor="@color/dominant_color"
+            custom:roundWidth="2dip"
+            custom:textIsDisplayable="false" />
+
+        <TextView
+            android:id="@+id/upgrade_progress_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="0"
+            android:textColor="@color/dominant_color"
+            android:textSize="38sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/upgrade_percent_sign_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/upgrade_progress_tv"
+            android:layout_toRightOf="@id/upgrade_progress_tv"
+            android:text="%"
+            android:textColor="@color/dominant_color"
+            android:textSize="18sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/upgrade_des_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="安装中..."
+        android:singleLine="true"  
+        android:ellipsize="end"  
+        android:focusable="true"  
+        android:focusableInTouchMode="true"  
+        android:textColor="@color/dominant_color"
+        android:textSize="22sp"
+        android:visibility="gone" />
+
+</LinearLayout>

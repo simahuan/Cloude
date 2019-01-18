@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wefi.zhuiju.customview.SquareLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_btn_problem_item"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/problem_icon_iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/problem_cannot_connect" />
+
+    <TextView
+        android:id="@+id/problem_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="App无法连接神器"
+        android:textColor="@color/problems_title"
+        android:textSize="14sp" />
+
+</com.wefi.zhuiju.customview.SquareLinearLayout>

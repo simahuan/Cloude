@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dominant_background2"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/list_back_view"
+        layout="@layout/actionbar_base" />
+
+    <LinearLayout
+        android:id="@+id/rl_bootom"
+        android:layout_width="match_parent"
+        android:layout_height="101dip"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#d0d0d0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/go_watch_iv"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:src="@drawable/selector_btn_go_watch" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="观看视频"
+                    android:textColor="@color/gray_ss"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/go_buy_iv"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:src="@drawable/selector_btn_go_buy" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="购买神器"
+                    android:textColor="@color/gray_ss"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/go_help_iv"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:src="@drawable/selector_help_btn" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="常见问题"
+                    android:textColor="@color/gray_ss"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/rl_bootom"
+        android:layout_below="@id/list_back_view" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/devices_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dip"
+                     android:id="@+id/headview"
+                     android:visibility="gone"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                       
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="@drawable/selector_item_click_bg" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dip"
+                            android:background="@drawable/wifi_connected"
+                            android:gravity="center"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="2dp"
+                            android:textColor="@color/dominant_color"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/ssid_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="2dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="Wifi_12345xxxxxabc"
+                            android:textColor="@color/divide_color_black2"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dip"
+                        android:background="#d0d0d0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dp" 
+                    android:layout_marginTop="5dip"
+                    android:id="@+id/wifi_list_ll"
+                    android:background="#FFFFFF"
+                     android:visibility="gone"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="33dip"
+                        android:gravity="center_vertical"
+                        android:text="@string/devices_list"
+                        android:textColor="@color/share_manager"
+                         android:layout_marginLeft="10dp"
+                        android:textSize="12dip" >
+                    </TextView>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dip"
+                        android:background="#d0d0d0" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dip"
+                     android:background="#FFFFFF"
+                    android:layout_marginRight="5dp" >
+
+                    <ListView
+                        android:id="@+id/listViewWifiScaned"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:cacheColorHint="@android:color/transparent"
+                        android:divider="#d0d0d0"
+                        android:dividerHeight="1dp"
+                        android:listSelector="@drawable/selector_lv_item_click_bg"
+                        android:scrollbarFadeDuration="0" >
+                    </ListView>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/devices_list_empty"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/empty_wifilist" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dip"
+                android:text="未找到追剧神器"
+                android:textColor="#818181"
+                android:textSize="14dip" />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

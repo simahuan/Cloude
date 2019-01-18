@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_weight="3"
+        android:id="@+id/tv_wifiname"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textSize="20sp"
+    	android:padding="10dp"
+    	android:singleLine="true"
+    	
+    	android:text="weiouter_freewifi"
+        />
+    <TextView 
+        android:layout_weight="1"
+        android:id="@+id/tv_wifiresult"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textSize="15sp"
+    	android:text="已加入"
+        />
+    <ImageView 
+        android:layout_weight="1"
+        android:id="@+id/iv_pic"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:src="@drawable/ic_launcher"/>
+
+</LinearLayout>

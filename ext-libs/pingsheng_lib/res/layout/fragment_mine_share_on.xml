@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="@dimen/mine_drawable"
+            android:layout_height="@dimen/mine_drawable"
+            android:layout_marginBottom="@dimen/mine_sharinginfo_bottom"
+            android:layout_marginLeft="@dimen/mine_sharinginfo_drawable"
+            android:layout_marginTop="@dimen/mine_sharinginfo_bottom"
+            android:src="@drawable/sharing_b" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/mine_storage_left"
+            android:layout_marginRight="@dimen/mine_storage_left"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/mine_storage_left"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SSID:"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/wxb_fontsize_20" />
+
+                <TextView
+                    android:id="@+id/tv_ssid_info"
+                    style="@style/sharing_tv"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textSize="@dimen/wxb_fontsize_20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="状态:"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/wxb_fontsize_14" />
+
+                <TextView
+                    android:id="@+id/tv_sharingstatus"
+                    style="@style/sharing_tv"
+                    android:text="分享中"
+                    android:textColor="@color/orange_st" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mine_storage_left"
+                    android:text="流量:"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/wxb_fontsize_14"
+                    android:visibility="gone" />
+
+                <TextView
+                    style="@style/sharing_tv"
+                    android:text="123.1M"
+                    android:textColor="@color/orange_st"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="已用"
+                    android:textColor="@color/orange_st"
+                    android:textSize="@dimen/wxb_fontsize_14"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:textColor="#ffffff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mine_storage_left"
+        android:layout_marginRight="@dimen/mine_storage_left" >
+
+        <TextView
+            android:id="@+id/tv_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="2dp"
+            android:text="0台设备接入"
+            android:textColor="@color/gray_ss"
+            android:textSize="@dimen/wxb_fontsize_16" />
+
+        <TextView
+            android:id="@+id/tv_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/mine_storage_top"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/scan_btn"
+            android:gravity="center"
+            android:text="刷新"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/wxb_fontsize_16" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/mine_storage_left"
+        android:layout_marginRight="@dimen/mine_storage_left"
+        android:background="@color/gray_ss" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_close_sharing"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mine_textview_confirm_height"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/mine_storage_left"
+            android:layout_marginLeft="@dimen/mine_storage_left"
+            android:layout_marginRight="@dimen/mine_storage_left"
+            android:layout_marginTop="@dimen/mine_setsharing_top"
+            android:background="@drawable/selector_btn_click"
+            android:gravity="center"
+            android:text="关闭共享"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/wxb_fontsize_18" />
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/tv_close_sharing"
+            android:layout_marginLeft="@dimen/mine_storage_left"
+            android:layout_marginRight="@dimen/mine_storage_left"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent" >
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="5dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:background="#FFFFFFFF" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFFFF"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|left" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageViewgameicon"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:scaleType="fitXY"
+                     />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp"
+                android:layout_marginTop="4dp" >
+
+                <TextView
+                    android:id="@+id/textViewgamename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="神犬侠侣"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textViewgamestate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@+id/textViewgamename"
+                    android:layout_alignBottom="@+id/textViewgamename"
+                    android:text="安装包未下载到本地"
+                    android:textColor="@color/divide_color"
+                   android:textSize="@dimen/app_other"  
+                   android:visibility="gone"
+                   />
+
+                <TextView
+                    android:id="@+id/textViewgameversion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewgamename"
+                    android:layout_marginTop="6dp"
+                    android:text="v1.1"
+                    android:textColor="@color/divide_color"
+                    android:textSize="@dimen/app_other" />
+
+                <TextView
+                    android:id="@+id/textViewdownnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewgamename"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toRightOf="@+id/textViewgameversion"
+                    android:text="233万人下载"
+                    android:textColor="@color/divide_color"
+                    android:textSize="@dimen/app_other" />
+
+                <TextView
+                    android:id="@+id/textViewgamesize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewgamename"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toRightOf="@+id/textViewdownnumber"
+                    android:text="60M"
+                    android:visibility="visible"
+                    android:textColor="@color/divide_color"
+                    android:textSize="@dimen/app_other" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical" >
+
+<!--             <Button
+                android:id="@+id/buttondowngame"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_coner2"
+                android:text="下载"
+                android:textSize="15sp" /> -->
+                
+               <com.wefi.zhuiju.customview.processbutton.impl.SubmitProcessButton
+                   android:id="@+id/buttondowngame"
+                   android:layout_width="61dp"
+                   android:layout_height="31dp"
+                   android:layout_marginBottom="4dp"
+                   android:layout_marginRight="10dp"
+              	   android:layout_marginTop="4dp"
+                   android:text="下载"
+                   android:textColor="@android:color/white"
+                   android:textSize="18sp"
+                   android:background="@color/transparent"
+                   custom:pb_colorNormal="@color/btn_install_n"
+                   custom:pb_colorPressed="@color/btn_install_p"
+                   custom:pb_colorProgress="@color/btn_downloading"
+                   custom:pb_colorComplete="@color/btn_install_n"
+                   />
+
+        </LinearLayout>
+       
+<!--  		<ProgressBar  
+	       android:id="@+id/apk_download_pb"  
+	       style="@android:style/Widget.ProgressBar.Horizontal"  
+	       android:layout_width="match_parent"
+	       android:layout_height="8dp"
+	       android:layout_gravity="bottom"
+	       android:layout_marginLeft="10dp"
+	       android:layout_marginRight="10dp"
+	       android:max="100" 
+	       android:visibility="invisible"/>   -->
+
+    </FrameLayout>
+
+</LinearLayout>

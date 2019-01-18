@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/mine_storage_left"
+    android:paddingRight="@dimen/mine_storage_left"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_user_head_height"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="@dimen/mine_user_head_portrait"
+            android:layout_height="@dimen/mine_user_head_portrait"
+            android:layout_gravity="center"
+            android:src="@drawable/head_portrait" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="用户名称"
+            android:textSize="22sp"
+            android:textColor="@color/gray_ss" />
+    </LinearLayout>
+
+    
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mine_user_marginleft"
+            android:text="我的记录："
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_log"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/mine_user_marginleft"
+            android:text="上次同步时间:2014/07/03 19:00"
+            android:textColor="@color/dominant_color" />
+    </RelativeLayout>
+<TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/gray" />
+    <TextView
+        style="@style/user_record"
+        android:text="正在追8部剧" />
+<TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+    <TextView
+        style="@style/user_record"
+        android:text="24个常用应用" />
+<TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+    <TextView
+        style="@style/user_record"
+        android:text="64个wifi记录" />
+<TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/mine_textview_height" >
+
+        <TextView
+            android:id="@+id/addressBook"
+            style="@style/user_record"
+            android:text="111个通讯录联系人" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/plugins"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/mine_user_marginleft"
+             />
+    </RelativeLayout>
+<TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+    <TextView
+        android:id="@+id/user_renew"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_textview_confirm_height"
+        android:layout_marginTop="@dimen/mine_user_margintop"
+        android:background="@drawable/selector_btn_click"
+        android:gravity="center"
+        android:text="恢    复"
+        android:textSize="17sp"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

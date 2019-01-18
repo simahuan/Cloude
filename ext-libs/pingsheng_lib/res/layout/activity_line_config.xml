@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dominant_background2"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/actionbar_base" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mine_storage_left"
+        android:layout_marginRight="@dimen/mine_storage_left"
+        android:orientation="vertical" >
+        
+		<TextView 
+		    android:id="@+id/smart_type_tv"
+		    android:layout_width="match_parent"
+		    android:layout_height="50dp"
+		    android:layout_marginLeft="@dimen/mine_status_left"
+            android:layout_marginRight="@dimen/mine_status_left"
+            android:layout_marginTop="@dimen/mine_status_top"
+		    android:gravity="center_vertical"
+		    android:textSize="@dimen/wxb_fontsize_18"
+		    android:textColor="@color/orange_st"
+		    android:text="•经过智能检测,您的网络需要拨号,请输入账号和密码"
+		    />
+
+        <RelativeLayout
+            android:id="@+id/pattern_manual_rl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:text="请选择网络接入方式"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/wxb_fontsize_18" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/gray" />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/proto_type_rg"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:divider="@color/gray"
+            android:dividerPadding="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/auto_acquire_rb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="自动获取"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/ppope_rb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="拨号上网" />
+
+            <RadioButton
+                android:id="@+id/static_ip_rb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="静态IP" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/divide_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/auto_acquire_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:id="@+id/ppope_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="40dp" >
+
+                    <TextView
+                        android:id="@+id/ppope_tip_tv"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:lineSpacingExtra="40dp"
+                        android:text="账号\n密码"
+                        android:textSize="@dimen/wxb_fontsize_16" />
+
+                    <EditText
+                        android:id="@+id/ppope_account_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_toRightOf="@id/ppope_tip_tv"
+                        android:gravity="center"
+                        android:hint="请输入用户名"
+                        android:maxLength="16"
+                        android:singleLine="true"
+                        android:textColorHint="#aeaeae"
+                        android:textSize="@dimen/wxb_fontsize_16" />
+
+                    <com.wefi.zhuiju.customview.EditTextPwd
+                        android:id="@+id/ppope_pwd_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ppope_account_et"
+                        android:layout_toRightOf="@id/ppope_tip_tv"
+                        android:gravity="center"
+                        android:digits="@string/register_password_digits"
+                        android:drawablePadding="3dp"
+                        android:hint="请输入密码"
+                        android:maxLength="16"
+                        android:singleLine="true"
+                        android:textColorHint="#aeaeae"
+                        android:textSize="@dimen/wxb_fontsize_16" />
+                </RelativeLayout>
+                
+                 <RelativeLayout
+                    android:id="@+id/static_ip_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/tip_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:gravity="left"
+                        android:lineSpacingExtra="40dp"
+                        android:text="IP地址\n子网掩码\n网关地址\nDNS(可选)"
+                        android:textSize="@dimen/wxb_fontsize_16" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tip_tv"
+                        android:orientation="vertical" >
+
+                        <EditText
+                            android:id="@+id/static_ip_address_et"
+                            style="@style/ip_edittext_style"
+                            android:hint="请输入ip地址" />
+
+                        <EditText
+                            android:id="@+id/static_subnet_mask_et"
+                            style="@style/ip_edittext_style"
+                            android:hint="请输入子网掩码" />
+
+                        <EditText
+                            android:id="@+id/static_gateway_address_et"
+                            style="@style/ip_edittext_style"
+                            android:hint="请输入网关地址" />
+
+                        <EditText
+                            android:id="@+id/static_dns_address_et"
+                            style="@style/ip_edittext_style"
+                            android:layout_marginBottom="2dp"
+                            android:hint="请输入主DNS" />
+
+                        <EditText
+                            android:id="@+id/static_dns_standby_address_et"
+                            style="@style/ip_edittext_style"
+                            android:hint="请输入备用DNS" />
+                    </LinearLayout>
+                </RelativeLayout>
+                
+
+                <TextView
+                    android:id="@+id/ok_btn_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/dominant_color"
+                    android:gravity="center"
+                    android:text="确    定"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wxb_fontsize_20" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

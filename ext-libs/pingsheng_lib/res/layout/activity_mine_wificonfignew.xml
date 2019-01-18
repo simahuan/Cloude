@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/actionbar_base" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dip" >
+
+            <TextView
+                android:id="@+id/net_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dip"
+                android:text="名称"
+                android:textColor="@color/share_manager"
+                android:textSize="18dip" />
+
+            <EditText
+                android:id="@+id/ssid_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_toRightOf="@id/net_name_text"
+                android:textColor="@color/set_sharenet_color"
+                android:background="@null"
+               	android:singleLine="true"
+                android:gravity="center|left"
+                android:hint="@string/hint_wifinameinput"
+                android:textColorHint="#aeaeae"
+                android:textSize="15dip" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#D4D4D4" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dip" >
+
+            <TextView
+                android:id="@+id/personality_slogan_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dip"
+                android:text="密码"
+                android:textColor="@color/share_manager"
+                android:textSize="18dip" />
+
+            <EditText 
+                android:id="@+id/key_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_toRightOf="@id/personality_slogan_text"
+                android:textColor="@color/set_sharenet_color"
+                android:gravity="center|left"
+                android:digits="@string/register_password_digits"
+                android:maxLength="16"
+                android:background="@null"
+                android:hint="@string/hint_wifipasswordinput"
+            	android:textColorHint="#aeaeae"
+            	android:singleLine="true"
+                android:inputType="textPassword"
+                android:textSize="15dip" />
+            
+           <CheckBox
+            android:id="@+id/key_show_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:layout_marginRight="16dip"
+            android:button="@drawable/selector_show_password"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

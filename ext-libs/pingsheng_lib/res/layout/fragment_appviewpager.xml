@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@+id/listViewappviewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/apps_empty_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dominant_background2"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@drawable/no_apps" />
+        <TextView
+            android:id="@+id/no_app_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="所有软件已为最新版"
+            android:textColor="@color/gray"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/download_all_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:background="@color/dominant_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textviewshowallinstall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="一键升级所有应用"
+            android:textColor="@drawable/application_textcolor"
+            android:textSize="@dimen/play_font_size" />
+
+        <ImageButton
+            android:id="@+id/imageButtonallupdate"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:src="@drawable/downloading" />
+    </LinearLayout>
+
+</RelativeLayout>

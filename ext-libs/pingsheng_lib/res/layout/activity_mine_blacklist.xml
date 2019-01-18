@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/actionbar_base" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mine_storage_left"
+        android:layout_marginRight="@dimen/mine_storage_left"
+        android:layout_marginTop="@dimen/mine_storage_top" 
+        >
+
+        <TextView
+            android:id="@+id/tv_black_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="2dp"
+            android:text="0台黑名单设备"
+            android:textColor="@color/gray_ss"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_black_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/mine_storage_top"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/scan_btn"
+            android:gravity="center"
+            android:text="刷新"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/mine_storage_left"
+        android:layout_marginRight="@dimen/mine_storage_left"
+        android:background="@color/gray_ss" />
+
+    <ListView
+        android:id="@+id/lv_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mine_storage_left"
+        android:layout_marginRight="@dimen/mine_storage_left"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent" 
+        android:layout_marginBottom="@dimen/mine_storage_left">
+    </ListView>
+
+</LinearLayout>

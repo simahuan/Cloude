@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editTextaddnetworkpassword"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="25dp"
+        android:hint="@string/hint_wifipasswordinput"
+    	android:background="@drawable/edittext_nomal"
+        android:inputType="textPassword"
+        android:textColorHint="#a9a9a9"
+        android:paddingLeft="10dip"
+        android:textColor="@color/customdialog_title"
+        android:textSize="14dip">
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/show_pwd_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="12sp"
+            android:text="@string/show_password" />
+
+        <CheckBox
+            android:id="@+id/remember_pwd_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:checked="true"
+            android:textSize="12sp"
+            android:text="@string/remember_password" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/actionbar_base" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dip" >
+
+            <TextView
+                android:id="@+id/net_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dip"
+                android:text="@string/net_name"
+                android:textColor="@color/share_manager"
+                android:textSize="18dip" />
+
+            <EditText
+                android:id="@+id/net_name"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="16dip"
+                android:layout_toRightOf="@id/net_name_text"
+                android:textColor="@color/set_sharenet_color"
+                android:singleLine="true"
+                android:background="@null"
+                android:textSize="15dip" />
+        </RelativeLayout>
+ </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:gravity="center"
+    android:background="@color/dominant_background2"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/msg_tv"
+        android:gravity="center"
+        android:text="以主人模式登录了盒子，你将退出."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/quit_tv"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/selector_btn_install"
+        android:text="退        出"
+         />
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:visibility="visible" >
+
+    <RelativeLayout
+        android:id="@+id/detection_image_rl"
+        android:layout_width="@dimen/detection_tip_image_width"
+        android:layout_height="@dimen/detection_tip_image_width"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/detection_normarl" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/detection_state_text_tv"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:gravity="center"
+        android:text="@string/detection_state_normal"
+        android:textColor="@color/detection_state_normal"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/detection_infos_rl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/detection_image_rl" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/opt_btn_tv"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/detection_infos_rl"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/selector_detection_state_normal"
+        android:gravity="center"
+        android:text="@string/detection_state_normal"
+        android:textColor="@color/white"
+        android:textSize="@dimen/detection_opt_text_textsize" />
+
+</RelativeLayout>

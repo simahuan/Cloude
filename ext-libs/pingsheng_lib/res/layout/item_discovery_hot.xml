@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_bar_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="353dp"
+        android:layout_marginTop="8dp" >
+
+        <FrameLayout
+            android:id="@+id/fl_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/im_videopicture"
+                android:layout_width="match_parent"
+                android:layout_height="353dp"
+                android:layout_gravity="center"
+                android:background="@drawable/discover_item_bg"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/video_root"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@+id/fl_vp"
+            android:layout_alignLeft="@+id/fl_vp"
+            android:layout_alignRight="@+id/fl_vp"
+            android:layout_alignTop="@+id/fl_vp" >
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@+id/fl_vp"
+            android:layout_alignLeft="@+id/fl_vp"
+            android:layout_alignRight="@+id/fl_vp"
+            android:layout_alignTop="@+id/fl_vp"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/iv_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/play_video"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/pb_load"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/load_progressbar_style"
+                android:visibility="invisible" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/tv_explain"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_duration"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/iv_love"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/support_n" />
+
+        <ImageView
+            android:id="@+id/iv_fullscreen_play"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="center"
+            android:src="@drawable/full_screen_n" />
+    </LinearLayout>
+
+</LinearLayout>

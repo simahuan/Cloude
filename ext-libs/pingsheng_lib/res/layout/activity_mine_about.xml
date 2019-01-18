@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/actionbar_base" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/about_introduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:lineSpacingExtra="10dp"
+            android:text="追剧神器Android客户端是北京智享科技有限公司专为Android追剧用户量身打造的追剧视频客户端产品。我们拥有海量视频资源，实时更新，一键订阅，自动同步。"
+            android:textColor="#4A4A4A"
+            android:textSize="14sp" />
+  <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dip"
+            android:layout_marginLeft="20dip"
+            android:layout_below="@id/about_introduce"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用微信绑定神器:"
+                android:textColor="#4A4A4A"
+            	android:textSize="14sp"
+                />
+            <EditText 
+                android:id="@+id/device_sn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#2EA7E2" 
+                android:background="@null"
+                android:inputType="none"
+				android:textIsSelectable="true"
+                />
+             <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(*按住拷贝)"
+                android:textColor="#959595"
+            	android:textSize="14sp"
+                />
+              </LinearLayout>
+        <ImageView
+            android:id="@+id/about_logo"
+            android:layout_width="88dp"
+            android:layout_height="66dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/about_logo" />
+
+        <TextView
+            android:id="@+id/about_versions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about_logo"
+            android:layout_centerHorizontal="true"
+            android:text="V1.0.3"
+            android:textColor="#2EA7E2"
+            android:textSize="14sp" />
+      
+       
+        <ImageView
+            android:id="@+id/about_copyright"
+            android:layout_width="110dp"
+            android:layout_height="14.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="42dp"
+            android:src="@drawable/about_copyright" />
+
+    </RelativeLayout>
+
+</LinearLayout>
